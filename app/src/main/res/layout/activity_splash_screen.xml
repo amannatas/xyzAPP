@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/soft_white"
     tools:context=".splash_screen">
 
     <ImageView
@@ -15,15 +15,16 @@
         android:layout_width="256dp"
         android:layout_height="247dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_launcher_foreground"
+        android:layout_marginTop="40dp"
+
+        android:src="@drawable/undraw_book_writer_ri5u"
         />
 
     <TextView
         android:id="@+id/splash_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/splash_image"
+
         android:layout_marginTop="200dp"
         android:gravity="center"
         android:text="@string/splash_screen"

@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">xyzAPP</string>
     <string name="splash_screen">welcome to xyz</string>
-    <string name="welcome">Login or sign app connect with xyz</string>
+    <string name="welcome">Login or Sign App Connect with xyz</string>
     <string name="signup">Find the Service</string>
     <string name="signup_engineer">Find the job</string>
-
+    <string name="already_have_account">Already have an account</string>
+    <string name="login">login</string>
+    <string name="main_signup">Sign Up</string>
+    <string name="otp_page">verify your account by OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="enter_otp">Enter OTP</string>
 </resources>
