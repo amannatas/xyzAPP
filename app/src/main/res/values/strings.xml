@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">xyzAPP</string>
+    <string name="app_name">CSET Service</string>
     <string name="splash_screen">welcome to xyz</string>
     <string name="welcome">Login or Sign App Connect with xyz</string>
     <string name="signup">Find the Service</string>
@@ -8,6 +8,11 @@
     <string name="login">login</string>
     <string name="main_signup">Sign Up</string>
     <string name="otp_page">verify your account by OTP</string>
-    <string name="verify_otp">Verify OTP</string>
+    <string name="verify_otp">Verify Mobile Number</string>
     <string name="enter_otp">Enter OTP</string>
+    <string name="name">Name</string>
+    <string name="Password">Password</string>
+    <string name="location">Location</string>
+    <string name="phone_number">Phone Number</string>
+
 </resources>

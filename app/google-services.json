@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "515915470907",
+    "project_id": "cset-service",
+    "storage_bucket": "cset-service.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515915470907:android:4a5c5fca3c27ea1ac6241e",
+        "android_client_info": {
+          "package_name": "com.example.xyzapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8ETwkVMc0ePl2hdLPOY2J3WuMrFjhEb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
