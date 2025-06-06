@@ -26,7 +26,8 @@
             android:exported="false" />
         <activity
             android:name=".engineer_signup"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".login_page"
             android:exported="false" />
