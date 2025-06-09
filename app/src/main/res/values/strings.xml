@@ -14,5 +14,18 @@
     <string name="Password">Password</string>
     <string name="location">Location</string>
     <string name="phone_number">Phone Number</string>
-
+    <string name="Working_Experience">Working Experience</string>
+    <string name="term_check">I have read all term and condition of the app</string>
+    <string name="referral">Referral code</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="id_prove">Aadhar Id Number</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="Enter_here">Enter here</string>
+    <string name="Resend">Resend in 10:00</string>
+    <string name="WELCOME">WELCOME TO XYZ</string>
+    <string name="Get_started">Get started</string>
+    <string name="Login_Account">Login Account</string>
+    <string name="otp_not_receive">If OTP is not Received</string>
+    <string name="Account_Type">Account Type</string>
+    <string name="dont_have_account">I do not have account?</string>
 </resources>

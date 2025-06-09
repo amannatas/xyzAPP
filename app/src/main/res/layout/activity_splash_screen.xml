@@ -11,6 +11,7 @@
     tools:context=".splash_screen">
 
     <ImageView
+        android:contentDescription="@string/splash_screen"
         android:id="@+id/splash_image"
         android:layout_width="256dp"
         android:layout_height="247dp"
