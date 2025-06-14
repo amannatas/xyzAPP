@@ -47,7 +47,8 @@
             android:exported="false" />
         <activity
             android:name=".home_page"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".engineer_signup"
             android:exported="false"

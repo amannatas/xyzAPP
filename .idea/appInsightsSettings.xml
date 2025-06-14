@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.xyzapp" />
-                  <option name="mobileSdkAppId" value="1:515915470907:android:4a5c5fca3c27ea1ac6241e" />
-                  <option name="projectId" value="cset-service" />
-                  <option name="projectNumber" value="515915470907" />
+                  <option name="mobileSdkAppId" value="1:364172193856:android:0c07fb5968e9646e2dafa5" />
+                  <option name="projectId" value="cset-74a82" />
+                  <option name="projectNumber" value="364172193856" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
