@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         Button user_signup = findViewById(R.id.user_signup);
         Button engineer_signup = findViewById(R.id.engineer_signup);
         TextView login_btn = findViewById(R.id.login_btn);
