@@ -9,6 +9,7 @@
     <color name="red">#EF4444</color>
     <color name="colorPrimary">#3B82F6</color>
     <color name="chatBackground">#EBE7E7</color>
+    <color name="hint">#808080</color>
 
 
 </resources>

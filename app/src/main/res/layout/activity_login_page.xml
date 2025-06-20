@@ -37,12 +37,12 @@
             android:layout_gravity="center"
             android:padding="8dp">
             <EditText
-
+                android:autofillHints="@string/Account_Type"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:hint="@string/Account_Type"
-
+                android:textColorHint="@color/hint"
                 android:inputType="textNoSuggestions"
                 android:textColor="@color/black"
                 android:drawableStart="@drawable/baseline_person_24"
@@ -64,10 +64,12 @@
                 android:drawablePadding="8dp"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp"
+                android:textColorHint="@color/hint"
                 android:background="@drawable/custom_editext"
                 />
 
             <EditText
+                android:textColorHint="@color/hint"
                 android:autofillHints="password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"

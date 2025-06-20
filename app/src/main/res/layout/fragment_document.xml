@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Personal Details"
+            android:text="@string/Personal_Details"
             android:layout_gravity="center"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -39,11 +39,12 @@
                 android:padding="8dp">
 
                 <EditText
+
                     android:autofillHints="phone"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:hint="Aadhar Number"
+                    android:hint="@string/Aadhar_Number"
                     android:inputType="number"
                     android:drawablePadding="8dp"
                     android:drawableStart="@drawable/lock"
@@ -82,12 +83,15 @@
                     android:background="@drawable/custom_editext"
                     />
                 <EditText
+                    android:autofillHints="skill"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:inputType="text"
                     android:layout_marginTop="10dp"
-                    android:text="Custom skill"
+                    android:text="@string/Custom_skill"
                     android:background="@drawable/custom_editext"
                     android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
                     />
 
 
@@ -107,7 +111,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/blue"
-            android:text="NEXT"
+            android:text="@string/Next"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_marginBottom="10dp"

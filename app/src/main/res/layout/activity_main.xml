@@ -23,6 +23,7 @@
         android:textStyle="bold" />
 
     <ImageView
+        android:contentDescription="@string/login"
         android:layout_width="300sp"
         android:layout_height="300dp"
         android:layout_gravity="center"

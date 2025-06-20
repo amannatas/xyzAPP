@@ -17,7 +17,7 @@
         android:layout_height="50dp"
         android:background="@color/blue"
         android:backgroundTint="@color/colorPrimary"
-        android:title="John Doe"
+        android:title="@string/chat_page"
         android:titleTextColor="@android:color/white"
         app:titleCentered="true"
         app:navigationIcon="@drawable/back"

@@ -16,7 +16,7 @@
         android:layout_height="50dp"
         android:background="@color/blue"
         android:backgroundTint="@color/colorPrimary"
-        android:title="John Doe"
+        android:title="@string/signup"
         android:titleTextColor="@android:color/white"
         app:titleCentered="true"
         app:navigationIcon="@drawable/back"

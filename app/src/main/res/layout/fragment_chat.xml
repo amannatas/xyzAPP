@@ -17,7 +17,7 @@
         android:layout_height="50dp"
         android:background="@color/blue"
         android:backgroundTint="@color/colorPrimary"
-        android:title="John Doe"
+        android:title="@string/chat_page"
         android:titleTextColor="@android:color/white"
         app:titleCentered="true"
         app:navigationIcon="@drawable/location"
@@ -52,11 +52,13 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <EditText
+            android:autofillHints="Hi"
             android:id="@+id/editTextMessage"
             android:layout_width="0dp"
+            android:inputType="text"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Type a message"
+            android:hint="@string/chat_box"
             android:textColor="@android:color/black"
             android:background="@drawable/custom_editext"
             android:padding="12dp"
@@ -67,7 +69,7 @@
             android:id="@+id/buttonSend"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="send"
+            android:contentDescription="@string/send"
             android:src="@android:drawable/ic_menu_send"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:backgroundTint="@color/black"

@@ -30,4 +30,14 @@
     <string name="dont_have_account">I do not have account?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Name">Name</string>
+    <string name="Phone_Number">Phone Number</string>
+    <string name="if_have_account">Already have an account?</string>
+    <string name="Personal_Details">Personal Details</string>
+    <string name="Aadhar_Number">Aadhar Number</string>
+    <string name="Custom_skill">Custom skill</string>
+    <string name="Next">NEXT</string>
+    <string name="chat_page">Chat Page</string>
+    <string name="chat_box">Type a message</string>
+    <string name="send">Send</string>
 </resources>
