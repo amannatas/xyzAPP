@@ -1,14 +1,14 @@
 package com.example.xyzapp;
 
-import android.graphics.Rect;
 import android.os.Bundle;
-import android.view.View;
-import android.view.ViewTreeObserver;
-import android.widget.ScrollView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.example.xyzapp.engineer_signup_form1;
 
 public class engineer_signup extends AppCompatActivity {
     Fragment activeFragment = null;
@@ -18,7 +18,16 @@ public class engineer_signup extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_engineer_signup);
 
+        if (savedInstanceState == null) {
+            loadFragment(new engineer_signup_form1());
+        }
 
 
+    }
+    private void loadFragment(Fragment fragment) {
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.fragment_container, fragment); // make sure id matches FrameLayout
+        ft.commit();
     }
 }

@@ -84,9 +84,22 @@
                     android:hint="Location"
                     android:inputType="text"
                     android:textColor="@color/black"
-                    android:drawableStart="@drawable/baseline_person_24"
+                    android:drawableStart="@drawable/location"
+
                     android:background="@drawable/custom_editext"
                     android:paddingLeft="8dp" />
+                <EditText
+                    android:autofillHints="referral_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/referral"
+                    android:inputType="number"
+                    android:drawablePadding="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="1dp"
+                    android:background="@drawable/custom_editext"
+                    />
 
                 <Button
                     android:id="@+id/user_signup"

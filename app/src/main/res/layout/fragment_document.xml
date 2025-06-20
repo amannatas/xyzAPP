@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_signup"
+            android:text="Personal Details"
             android:layout_gravity="center"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -37,29 +37,16 @@
                 android:orientation="vertical"
                 android:layout_gravity="center"
                 android:padding="8dp">
-                <EditText
-                    android:autofillHints="name"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
-                    android:hint="@string/name"
-                    android:padding="8dp"
-                    android:inputType="text"
-                    android:drawableStart="@drawable/baseline_person_24"
-                    android:drawablePadding="8dp"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="1dp"
-                    android:background="@drawable/custom_editext"
-                    />
+
                 <EditText
                     android:autofillHints="phone"
-                    android:layout_width="match_parent"
+                    android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:hint="@string/phone_number"
+                    android:hint="Aadhar Number"
                     android:inputType="number"
                     android:drawablePadding="8dp"
-                    android:drawableStart="@drawable/baseline_phone_24"
+                    android:drawableStart="@drawable/lock"
                     android:paddingStart="8dp"
                     android:paddingEnd="1dp"
                     android:background="@drawable/custom_editext"
@@ -80,86 +67,53 @@
                     android:background="@drawable/custom_editext"
                     />
 
-
-                <EditText
-                    android:autofillHints="password"
+                <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:hint="@string/confirm"
-                    android:inputType="textPassword"
-                    android:drawableStart="@drawable/lock"
-                    android:drawablePadding="8dp"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="1dp"
 
                     android:background="@drawable/custom_editext"
                     />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
 
-                <EditText
-                    android:autofillHints="location"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="10dp"
-                    android:hint="@string/location"
-                    android:inputType="text"
-                    android:drawableStart="@drawable/location"
-                    android:drawablePadding="8dp"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="1dp"
                     android:background="@drawable/custom_editext"
                     />
                 <EditText
-                    android:autofillHints="referral_code"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:hint="@string/referral"
-                    android:inputType="number"
-                    android:drawablePadding="8dp"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="1dp"
+                    android:text="Custom skill"
                     android:background="@drawable/custom_editext"
+                    android:paddingStart="8dp"
                     />
-                <CheckBox
-                    android:id="@+id/term_checkbox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/term_check"
-                    android:layout_gravity="center"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"
-                    />
-                <Button
-                    android:id="@+id/user_signup"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:backgroundTint="@color/blue"
-                    android:text="@string/signup"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="10dp"
-                    />
+
+
+
+
+
+
+
+
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/user_signup"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/already_have_account"/>
-        <TextView
-            android:id="@+id/login_btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:text="NEXT"
+            android:textStyle="bold"
             android:textSize="20sp"
-            android:text="@string/login"
-            android:textStyle="bold"/>
+            android:layout_marginBottom="10dp"
+            />
+
+
 
         <View
             android:id="@+id/bottom_space"
