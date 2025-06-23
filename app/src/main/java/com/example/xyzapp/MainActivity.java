@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent inext1 = new Intent(MainActivity.this, user_sign_up_page.class);
+
                 startActivity(inext1);
             }
         });
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent inext2 = new Intent(MainActivity.this, engineer_signup.class);
+
                 startActivity(inext2);
             }
         });
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                   Intent inext3 = new Intent(MainActivity.this, login_page.class);
+
                   startActivity(inext3);
             }
 

@@ -8,7 +8,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".confirm_pages">
-
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/chatToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:backgroundTint="@color/colorPrimary"
+        android:title="@string/chat_page"
+        android:titleTextColor="@android:color/white"
+        app:titleCentered="true"
+        app:navigationIcon="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

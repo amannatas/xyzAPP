@@ -18,9 +18,7 @@
         <activity
             android:name=".notification_page"
             android:exported="false" />
-        <activity
-            android:name=".chat_both"
-            android:exported="false" />
+
         <activity
             android:name=".history_booking"
             android:exported="false" />
@@ -39,12 +37,7 @@
         <activity
             android:name=".forgot_password"
             android:exported="false" />
-        <activity
-            android:name=".otp_page"
-            android:exported="false" />
-        <activity
-            android:name=".confirm_page"
-            android:exported="false" />
+
         <activity
             android:name=".home_page"
             android:exported="false"

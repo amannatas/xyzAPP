@@ -25,18 +25,9 @@ public class OtpFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_otp, container, false);
 
         Button verifyOtp = view.findViewById(R.id.verify_otp);
-        verifyOtp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Navigate to ConfirmPageFragment
-                getParentFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragment_container, new confirm_pages()) // make sure this ID exists in your activity layout
-                        .addToBackStack(null)
-                        .commit();
-            }
-        });
+
 
         return view;
     }
+
 }

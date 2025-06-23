@@ -8,8 +8,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.xyzapp.engineer_signup_form1;
-
 public class engineer_signup extends AppCompatActivity {
     Fragment activeFragment = null;
     @Override
@@ -19,7 +17,7 @@ public class engineer_signup extends AppCompatActivity {
         setContentView(R.layout.activity_engineer_signup);
 
         if (savedInstanceState == null) {
-            loadFragment(new engineer_signup_form1());
+            loadFragment(new engineer_signup_form());
         }
 
 
@@ -27,7 +25,7 @@ public class engineer_signup extends AppCompatActivity {
     private void loadFragment(Fragment fragment) {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.fragment_container, fragment); // make sure id matches FrameLayout
+        ft.replace(R.id.fragment_engineer, fragment); // make sure id matches FrameLayout
         ft.commit();
     }
 }
