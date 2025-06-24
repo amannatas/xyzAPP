@@ -31,7 +31,16 @@ public class Document_Fragment extends Fragment {
         user_signup = view.findViewById(R.id.user_signup);
 
         user_signup.setOnClickListener(v -> {
-            switchFragment(new OtpFragment() ); // otp fragment par switch karega
+            // ✅ Step 1: Bundle banao
+            Bundle bundle = new Bundle();
+            bundle.putString("source", "engineer_activity"); // yeh tumhara identity hoga
+            bundle.putInt("container_id", R.id.fragment_engineer); // yeh tumhare activity ka frame ID
+
+            // ✅ Step 2: OTP Fragment me bundle bheja
+            OtpFragment otpFragment = new OtpFragment();
+            otpFragment.setArguments(bundle);
+
+            switchFragment(otpFragment ); // otp fragment par switch karega
         });
 
         return view;

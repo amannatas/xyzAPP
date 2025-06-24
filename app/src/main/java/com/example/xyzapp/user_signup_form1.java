@@ -33,7 +33,15 @@ public class user_signup_form1 extends Fragment {
         });
 
         user_signup.setOnClickListener(v -> {
-            switchFragment(new OtpFragment()); // otp fragment par switch karega
+            // ✅ Step 1: Bundle banao
+            Bundle bundle = new Bundle();
+            bundle.putString("source", "engineer_activity"); // yeh tumhara identity hoga
+            bundle.putInt("container_id", R.id.user_sign_up); // yeh tumhare activity ka frame ID
+
+            // ✅ Step 2: OTP Fragment me bundle bheja
+            OtpFragment otpFragment = new OtpFragment();
+            otpFragment.setArguments(bundle);
+            switchFragment(otpFragment); // otp fragment par switch karega
         });
 
         return view;
@@ -42,7 +50,7 @@ public class user_signup_form1 extends Fragment {
     private void switchFragment(Fragment fragment) {
         requireActivity().getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.fragment_container, fragment) // host activity me yeh FrameLayout ID hona chahiye
+                .replace(R.id.user_sign_up, fragment) // host activity me yeh FrameLayout ID hona chahiye
                 .addToBackStack(null)
                 .commit();
     }

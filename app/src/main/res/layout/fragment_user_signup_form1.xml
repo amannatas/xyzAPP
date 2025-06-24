@@ -101,6 +101,7 @@
                     android:paddingEnd="8dp"/>
 
                 <EditText
+                    android:id="@+id/location"
                     android:textColorHint="@color/hint"
                     android:autofillHints="@string/location"
                     android:layout_width="match_parent"

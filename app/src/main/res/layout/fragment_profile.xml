@@ -1,15 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple"
-    tools:context=".profileFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    tools:context=".profileFragment"
+    >
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    >
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/chatToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:backgroundTint="@color/colorPrimary"
+        android:title="@string/chat_page"
+        android:titleTextColor="@android:color/white"
+        app:titleCentered="true"
+        app:navigationIcon="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/custom_editext"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
 
-</FrameLayout>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:textAlignment="center"
+                    android:text="helo "/>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/custom_editext"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/custom_editext"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+</ScrollView>

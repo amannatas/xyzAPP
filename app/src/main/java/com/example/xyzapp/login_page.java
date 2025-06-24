@@ -1,48 +1,31 @@
 package com.example.xyzapp;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.example.xyzapp.user_signup_form1;
 
 public class login_page extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login_page);
-        Button user_login = findViewById(R.id.user_login);
-        TextView signup_page = findViewById(R.id.signup_page);
-        TextView forgot_btn = findViewById(R.id.forgot_btn);
+        setContentView(R.layout.activity_login_page); // your XML file with FrameLayout
 
-        user_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(login_page.this, home_page.class);
-                startActivity(intent);
-            }
-        });
-        signup_page.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(login_page.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
-        forgot_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(login_page.this, forgot_password.class);
-                startActivity(intent);
-            }
-        });
+        // ✅ Default fragment load karna
+        if (savedInstanceState == null) {
+            loadFragment(new LoginFragment());
+        }
+    }
+    private void loadFragment(Fragment fragment) {
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.Login_activity, fragment); // make sure id matches FrameLayout
+        ft.commit();
     }
 }

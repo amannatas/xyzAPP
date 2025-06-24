@@ -24,7 +24,7 @@ public class user_sign_up_page extends AppCompatActivity {
     private void loadFragment(Fragment fragment) {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.fragment_container, fragment); // make sure id matches FrameLayout
+        ft.replace(R.id.user_sign_up, fragment); // make sure id matches FrameLayout
         ft.commit();
     }
 }
